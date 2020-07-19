@@ -29,5 +29,5 @@ typedef struct t_format
 char *character;
 int (*ch)(va_list vlist, char *output_p, int o_p);
 } t_f;
-
+int print_string(va_list vlist, char *output_p, int o_p);
 #endif
