@@ -27,7 +27,7 @@ int s_trlen(char *str);
 typedef struct t_format
 {
 char *character;
-  int (*ch)(va_list vlist, char *output_p, int o_p);
+int (*ch)(va_list vlist, char *output_p, int o_p);
 } t_f;
 
 #endif
