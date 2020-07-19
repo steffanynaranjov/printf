@@ -30,4 +30,16 @@ char *character;
 int (*ch)(va_list vlist, char *output_p, int o_p);
 } t_f;
 
+<<<<<<< HEAD
+=======
+int _printf(const char *format, ...);
+int _putchar(char c);
+int (*format_type(char *s))(va_list vlist, char *output_p, int o_p);
+int print_percent(va_list vlist, char *output_p, int o_p);
+void _puts(char *s);
+int print_char(va_list vlist, char *output_p, int o_p);
+int strlen_(char *str);
+int print_string(va_list vlist, char *output_p, int o_p);
+
+>>>>>>> fa890ee9cbeca4738d08bf910fe064a20accb995
 #endif
