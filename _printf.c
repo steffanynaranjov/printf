@@ -24,7 +24,7 @@ while (format[x])
 {
 if (format[x] != '%')
 output_p[o_p] = format[x], o_p++;
-else if (strlen_(print) != 1)
+else if (s_trlen(print) != 1)
 {
 print_ch = format_type(++print);
 if (!print_ch)
@@ -40,4 +40,4 @@ va_end(vlist);
 write(1, output_p, o_p);
 free(output_p);
 return (o_p);
-{
+}
