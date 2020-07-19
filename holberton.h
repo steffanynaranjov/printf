@@ -15,19 +15,20 @@ int (*format_type(char *s))(va_list vlist, char *output_p, int o_p);
 int print_percent(va_list vlist, char *output_p, int o_p);
 int print_char(va_list vlist, char *output_p, int o_p);
 int s_trlen(char *str);
+int print_string(va_list vlist, char *output_p, int o_p);
 
 /**
 * struct t_format - Struct t_format
 *
 * @character: the class
-* @ch: pointer to a function
+* @ptrfunc: pointer to a function
 *
 * Description: the structure for the format type
 */
 typedef struct t_format
 {
 char *character;
-int (*ch)(va_list vlist, char *output_p, int o_p);
+int (*ptrfunc)(va_list vlist, char *output_p, int o_p);
 } t_f;
-int print_string(va_list vlist, char *output_p, int o_p);
+
 #endif
