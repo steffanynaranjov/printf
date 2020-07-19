@@ -7,7 +7,7 @@
  *
  * Return: the int
  */
-int print_string(va_list vlist,    char *output_p,    int o_p)
+int print_string(va_list vlist, char *output_p, int o_p)
 {
 	int x = 0;
 	char *print = va_arg(vlist, char *);
