@@ -76,6 +76,7 @@ mandatory
 <p>Create a man page for your function.</p>
 
 <h4 class="task">
+ADVANCED TASKS
 3. With a face like mine, I do better in print
 <span class="alert alert-info mandatory-optional">
 #advanced
