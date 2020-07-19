@@ -5,18 +5,17 @@
 #include <stdio.h>
 #include <limits.h>
 /**
- * struc t_input - type of the struct to select specifiers
+ * struct t_input - Struct type to select specifiers
  *
  * @character: the argument passed to the function
  * @ch: pointer to a function
  *
  */
-
 typedef struct t_input
 {
 	char *character;
 	int  (*ch)(vali_list vlist, char *output_p, int p_p);
-}t_f;
+} t_f;
 
 int _printf(const char *format, ...);
 int _putchar(char c);
