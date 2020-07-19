@@ -6,7 +6,7 @@
 
 <h2><strong>Description</strong></h2>
 
-<p>The <strong>printf project</strong>was made for Diana <a href="https://github.com/Sofiag8">Sofia Garcia</a> and Steffany <a href="https://github.com/steffanynaranjov">Naranjo Vargas</a>. Students of Holberton <a href="https://www.holbertonschool.com/"> School</a> For this project we have some instruction that you will see in this README.</p> 
+<p>The <strong>printf project</strong>was made for <a href="https://github.com/Sofiag8">Diana Sofia Garcia</a> and <a href="https://github.com/steffanynaranjov">Steffany Naranjo Vargas</a>. Students of <a href="https://www.holbertonschool.com/"> Holberton School</a> For this project we have some instruction that you will see in this README.</p> 
 
 <p><strong>Read or watch</strong>:</p>
 
