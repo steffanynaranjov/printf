@@ -27,7 +27,7 @@ int (*format_type(char *s))(va_list vlist char *output_p int o_p);
 int print_percent(va_list vlist, char *output_p, int o_p);
 void _puts(char *s);
 int print_char(va_list vlist, char *output_p, int o_p);
-int strlen_(char *str)
-
+int strlen_(char *str);
+int print_string(va_list vlist, char *output_p, int o_p);
 
 #endif
