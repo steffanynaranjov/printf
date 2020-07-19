@@ -6,7 +6,7 @@
 * Description: Function to get the type function
 * Return: type or null
 */
-int (*format_type(char *s))(va_list vlist char *output_p int o_p)
+int (*format_type(char *s))(va_list vlist, char *output_p, int o_p)
 {
 t_f types[] = {
 {"c", print_char},
@@ -25,7 +25,8 @@ t_f types[] = {
 {"%", print_percent},
 {NULL, NULL}
 };
-int x = 0;
+int x;
+x = 0;
 
 while (types[x].character)
 {
