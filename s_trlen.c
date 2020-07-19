@@ -1,12 +1,12 @@
 /**
-* strlen_ - String lenght
+* s_trlen - String lenght
 * @str: Input
 *
 * Description: Lenght of the string
 *
 * Return: The lenght
 */
-int strlen_(char *str)
+int s_trlen(char *str)
 {
 int x = 0;
 
