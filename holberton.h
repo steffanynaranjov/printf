@@ -1,7 +1,11 @@
 #ifndef _HOLBERTON_H
 #define _HOLBERTON_H
+
+#define SIZE 2048
+
 #include <stdlib.h>
 #include <stdarg.h>
+#include <unistd.h>
 #include <stdio.h>
 #include <limits.h>
 /**
