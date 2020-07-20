@@ -60,7 +60,7 @@ int print_int(va_list vlist, char *output_p, int o_p)
  *
  * Return: int
  */
-print_single_int(va_list vlist, char *output_p, int o_p)
+int print_single_int(va_list vlist, char *output_p, int o_p)
 {
 	o_p = print_number(vlist)
 		return (o_p);
