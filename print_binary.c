@@ -1,62 +1,64 @@
 #include "holberton.h"
 char *p_binary(int n);
 /**
-* print_binary - prints binary
-* @vlist: arguments passed to print
+* print_binary - Print binary
+* @vlist: argument passed to print
 * @output_p: Host output
-* @o_p: output position
+* @o_p: Output position
 *
-* Return: int
+* Description: print number
+* Return: 0
 */
 int print_binary(va_list vlist, char *output_p, int o_p)
 {
 int x, y = 0;
-char *print;
+char *ptr;
 
 x = va_arg(vlist, int);
-print = print_binary(x);
+ptr = p_binary(x);
 
-for (; print[y]; y++, o_p++)
-output_p[o_p] = print[y];
+for (; ptr[y]; y++, o_p++)
+output_p[o_p] = ptr[y];
 return (o_p);
 }
 
 /**
-* p_binary - prints a binary
-* @n: int to convert
+* p_binary - Print %
+* @n: number for convert
 *
-* Description: Function that print a char
-* Return: int
+* Description: return a binary
+* Return: 0
 */
 char *p_binary(int n)
 {
-int a, b, c, f = 0;
-char *ptr, *zero = "0";
+int a, b, count, flag = 0;
+char *point, *zero = "0";
 
-c = 0;
+count = 0;
 if (n == 0)
 return (zero);
-ptr = (char *)malloc(33);
-if (!ptr)
+point = (char *)malloc(33);
+if (!point)
 exit(EXIT_FAILURE);
 for (a = 31; a >= 0; a--)
 {
 b = n >> a;
 if (b & 1)
-*(ptr + c) = 1 + '0';
+*(point + count) = 1 + '0';
 else
-*(ptr + c) = 0 + '0';
-c++;
+*(point + count) = 0 + '0';
+count++;
 }
-*(ptr + c) = '\0';
-while (ptr)
+*(point + count) = '\0';
+while (point)
 {
-if (*ptr != '0')
-f = 1;
-if (f == 1)
-return (ptr);
-ptr++;
+{
+if (*point != '0')
+flag = 1;
+if (flag == 1)
+return (point);
+point++;
 }
-free(ptr);
-return (ptr);
+free(point);
+return (point);
 }
