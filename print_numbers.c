@@ -48,9 +48,7 @@ int print_numbers(int n, char *output_p, int o_p)
  */
 int print_int(va_list vlist, char *output_p, int o_p)
 {
-
-	o_p = print_numbers(vlist)
-		return (o_p);
+	return (print_numbers(va_arg(vlist, int), output_p, o_p));
 }
 /**
  * print_single_int - print specifier i
@@ -62,6 +60,5 @@ int print_int(va_list vlist, char *output_p, int o_p)
  */
 int print_single_int(va_list vlist, char *output_p, int o_p)
 {
-	o_p = print_numbers(vlist)
-		return (o_p);
+	return (print_numbers(va_arg(vlist, int), output_p, o_p));
 }
