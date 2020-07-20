@@ -17,11 +17,11 @@ The format string is a character string, beginning and ending in its initial shi
 .SH %
 The character % is followed by zero or more of the following flags:
 .SH c
-Print a character
+Print a character.
 .SH i
 Print a single integer.
 .SH d
-Print a decimal number
+Print a decimal number.
 .SH s
 Print a string.
 .SH b
@@ -42,43 +42,43 @@ Print address of a pinter
 Some examples of _printf
 
 _printf("String:[%s]\n", "I am a string !");
-PP.
+.PP
 String:[I am a string !]
 
 len = _printf("Let's try to printf a simple sentence.\n");
-PP.
+.PP
 Length:[39, 39]
 
 _printf("Negative:[%d]\n", -762534);
-PP.
+.PP
 Negative:[-762534]
 
 _printf("Unsigned:[%u]\n", ui);
-PP.
+.PP
 Unsigned:[2147484671]
 
 _printf("Unsigned octal:[%o]\n", ui);
-PP.
+.PP
 Unsigned octal:[20000001777]
 
 _printf("Unsigned hexadecimal:[%x, %X]\n", ui, ui);
-PP.
+.PP
 Unsigned hexadecimal:[800003ff, 800003FF]
 
 _printf("Character:[%c]\n", 'H');
-PP.
+.PP
 Character:[H]
 
 _printf("Address:[%p]\n", addr);
-PP.
+.PP
 Address:[0x7ffe637541f0]
 
 len = _printf("Percent:[%%]\n");
-PP.
+.PP
 Percent:[%]
 
 _printf("Unknown:[%r]\n");
-PP.
+.PP
 Len:[12]
 
 
