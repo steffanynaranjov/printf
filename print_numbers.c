@@ -1,14 +1,14 @@
 #include "holberton.h"
 /**
  * print_numbers - prints integer
- * @vlist: arguments passed to print
  * @output_p: Host output
  * @o_p: output position
+ * @n: int
  *
  * Description: Function that print a char
  * Return: int
  */
-int print_number(int n, char *output_p, int o_p)
+int print_numbers(int n, char *output_p, int o_p)
 {
 	int x = 1, y = 0, z;
 
