@@ -2,7 +2,6 @@
 #define _HOLBERTON_H
 
 #define SIZE 2048
-#define char buffer[1024]
 
 #include <stdlib.h>
 #include <stdarg.h>
