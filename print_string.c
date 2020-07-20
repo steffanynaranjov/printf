@@ -15,7 +15,7 @@ char *print = va_arg(vlist, char *);
 
 if (!print)
 print = "(null)";
-for (; print[x]; x++ o_p++)
-output[o_p] = print[x];
+for (; print[x]; x++, o_p++)
+output_p[o_p] = print[x];
 return (o_p);
 }
