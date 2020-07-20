@@ -16,7 +16,7 @@ int print_percent(va_list vlist, char *output_p, int o_p);
 int print_char(va_list vlist, char *output_p, int o_p);
 int s_trlen(char *str);
 int print_string(va_list vlist, char *output_p, int o_p);
-int print_number(int n, char *output_p, int o_p);
+int print_numbers(int n, char *output_p, int o_p);
 int print_int(va_list vlist, char *output_p, int o_p);
 int print_single_int(va_list vlist, char *output_p, int o_p);
 /**
