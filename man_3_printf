@@ -31,7 +31,7 @@ Print reverse.
 .SH R
 Print ROT13
 .SH U
-Print a u number
+Print an unsigned number
 .SH o
 Print Octal
 .SH x X
@@ -81,6 +81,8 @@ _printf("Unknown:[%r]\n");
 .PP
 Len:[12]
 
+.SH SEE ALSO
+printf(), scanf(), fprintf(), sprintf(), vfprintf()
 
 .SH AUTHORS
 
