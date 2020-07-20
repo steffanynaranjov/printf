@@ -12,6 +12,8 @@ t_f types[] = {
 {"c", print_char},
 {"s", print_string},
 {"%", print_percent},
+{"i", print_single_int},
+{"d", print_int},
 {NULL, NULL}
 };
 int x;
