@@ -14,6 +14,7 @@ t_f types[] = {
 {"%", print_percent},
 {"i", print_single_int},
 {"d", print_int},
+{"b", print_binary},
 {NULL, NULL}
 };
 int x;
