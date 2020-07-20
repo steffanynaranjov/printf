@@ -23,7 +23,7 @@ x = 0;
 while (types[x].character)
 {
 if (types[x].character[0] == s[0] && s[0] != '\0')
-return (types[x].ptrfunc);
+return (types[x].func);
 x++;
 }
 return (NULL);

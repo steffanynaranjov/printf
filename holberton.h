@@ -26,14 +26,14 @@ char *p_binary(int n);
 * struct t_format - Struct t_format
 *
 * @character: the class
-* @ptrfunc: pointer to a function
+* @func: pointer to a function
 *
 * Description: the structure for the format type
 */
 typedef struct t_format
 {
 char *character;
-int (*ptrfunc)(va_list vlist, char *output_p, int o_p);
+int (*func)(va_list vlist, char *output_p, int o_p);
 } t_f;
 
 #endif

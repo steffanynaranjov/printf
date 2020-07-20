@@ -10,8 +10,8 @@
 int _printf(const char *format, ...)
 {
 int x = 0, o_p = 0;
-char *print = (char *) format, *output_p;
-int (*print_ptrfun)(va_list, char *, int);
+char *ptr = (char *) format, *output_p;
+int (*ptr_func)(va_list, char *, int);
 va_list vlist;
 
 if (!format)
@@ -24,17 +24,17 @@ while (format[x])
 {
 if (format[x] != '%')
 output_p[o_p] = format[x], o_p++;
-else if (s_trlen(print) != 1)
+else if (s_trlen(ptr) != 1)
 {
-print_ptrfun = format_type(++print);
-if (!print_ptrfun)
+ptr_func = format_type(++ptr);
+if (!ptr_func)
 output_p[o_p] = format[x], o_p++;
 else
-o_p = print_ptrfun(vlist, output_p, o_p), x++;
+o_p = ptr_func(vlist, output_p, o_p), x++;
 }
 else
 o_p = -1;
-x++, print++;
+x++, ptr++;
 }
 va_end(vlist);
 write(1, output_p, o_p);

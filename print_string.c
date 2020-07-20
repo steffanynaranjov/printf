@@ -11,11 +11,11 @@
 int print_string(va_list vlist, char *output_p, int o_p)
 {
 int x = 0;
-char *print = va_arg(vlist, char *);
+char *ptr = va_arg(vlist, char *);
 
-if (!print)
-print = "(null)";
-for (; print[x]; x++, o_p++)
-output_p[o_p] = print[x];
+if (!ptr)
+ptr = "(null)";
+for (; ptr[x]; x++, o_p++)
+output_p[o_p] = ptr[x];
 return (o_p);
 }
