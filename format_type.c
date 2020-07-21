@@ -18,11 +18,8 @@ t_f types[] = {
 {"u", print_unumber},
 {"x", print_hexa},
 {"X", print_HEXA},
-<<<<<<< HEAD
 {"p", print_paddress},
-=======
 {"S", print_S_string},
->>>>>>> 9fd83265191302c949aa7db48fa4ed7c3af7ace0
 {NULL, NULL}
 };
 int x;
