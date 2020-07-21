@@ -23,6 +23,7 @@ int print_octal(va_list vlist, char *output_p, int o_p);
 int print_unumber(va_list vlist, char *output_p, int o_p);
 int print_hexa(va_list vlist, char *output_p, int o_p);
 int print_HEXA(va_list vlist, char *output_o, int o_p);
+int print_paddress(va_list vlist, char *output_p, int o_p);
 
 /**
 * struct t_format - Struct t_format
