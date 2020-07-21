@@ -16,7 +16,8 @@ t_f types[] = {
 {"d", print_int},
 {"o", print_octal},
 {"u", print_unumber},
-{"h", print_hexa},
+{"x", print_hexa},
+{"X", print_HEXA},
 {NULL, NULL}
 };
 int x;
