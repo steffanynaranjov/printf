@@ -19,8 +19,9 @@ int print_string(va_list vlist, char *output_p, int o_p);
 int print_numbers(int n, char *output_p, int o_p);
 int print_int(va_list vlist, char *output_p, int o_p);
 int print_single_int(va_list vlist, char *output_p, int o_p);
-int print_binary(va_list vlist, char *output_p, int o_p);
-char *p_binary(int n);
+int print_octal(va_list vlist, char *output_p, int o_p);
+int print_unumber(va_list vlist, char *output_p, int o_p);
+
 
 /**
 * struct t_format - Struct t_format
