@@ -18,6 +18,7 @@ t_f types[] = {
 {"u", print_unumber},
 {"x", print_hexa},
 {"X", print_HEXA},
+{"S", print_S_string},
 {NULL, NULL}
 };
 int x;
