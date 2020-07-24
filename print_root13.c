@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * print_percent - Print rot13
+ * print_rot13 - Print rot13
  * @vlist: arguments passed to print
  * @output_p: Host output
  * @o_p: output position
