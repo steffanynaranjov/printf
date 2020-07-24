@@ -20,7 +20,8 @@ int (*format_type(char *s))(va_list vlist, char *output_p, int o_p)
 		{"X", print_HEXA},
 		{"S", print_S_string},
 		{"p", print_paddress},
-		{NULL, NULL}
+		{"R", print_rot13},
+{NULL, NULL}
 	};
 	int x;
 
